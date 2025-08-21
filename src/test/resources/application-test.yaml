@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: "jdbc:tc:postgresql:17-alpine://localhost/postgres"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  flyway:
+    enabled: false
+    validate-on-migrate: true
+    baseline-on-migrate: true
+
